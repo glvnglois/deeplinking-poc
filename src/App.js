@@ -1,32 +1,33 @@
 import './App.css';
+import { SocialIcon } from 'react-social-icons';
 
 function App() {
   return (
     <div className="App">
       <div>
         <h1>Instagram</h1>
-        <a className="link" href='https://www.instagram.com'>Instagram Feed</a><br />
-        <a className="link" href='https://www.instagram.com/create/story'>Instagram Story</a>
+        <SocialIcon url="https://www.instagram.com" />
+        <SocialIcon url="https://www.instagram.com/create/story" />
       </div>
       <div>
         <h1>Snapchat</h1>
-        <div data-text="false" className="snapchat-creative-kit-share"></div>
+        <div data-share-url="https://www.jkmte.com/?ai=13900" data-text="false" className="snapchat-creative-kit-share"></div>
       </div>
       <div>
         <h1>Twitter</h1>
-        <a className="link" href="https://twitter.com/intent/tweet?text=this%20is%20a%20test">Twitter Tweet</a>
+        <SocialIcon url="http://twitter.com/intent/tweet?text=Check%20this%20out!&url=https%3A%2F%2Fwww.jkmte.com%3Fai%3D13900&via=fansrevenue" />
       </div>
       <div>
         <h1>Reddit</h1>
-        <a className="link" href="https://www.reddit.com/submit?url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F24823114%2Fpost-to-reddit-via-url&title=Post%20to%20Reddit%20via%20URL">Reddit Post</a>
+        <SocialIcon url="http://www.reddit.com/submit?url=https%3A%2F%2Fwww.jkmte.com%3Fai%3D13900&title=Check%20this%20out!" />
       </div>
       <div>
         <h1>Facebook</h1>
-        <a className="link" href="https://www.facebook.com/sharer.php?src=sp&u=http%3A%2F%2Fwww.myDomain.com%2Fpath%2F">Facebook Post</a>
+        <SocialIcon url="http://www.facebook.com/sharer.php?src=sp&u=http%3A%2F%2Fwww.myDomain.com%2Fpath%2F" />
       </div>
       <div>
         <h1>TikTok</h1>
-        <a className="link" href="https://www.tiktok.com/">Tiktok</a>
+        <SocialIcon url="http://www.tiktok.com/" />
       </div>
     </div>
   );
